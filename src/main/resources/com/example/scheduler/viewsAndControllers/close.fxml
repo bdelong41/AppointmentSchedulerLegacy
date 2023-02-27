@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="150" prefWidth="350" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.scheduler.viewsAndControllers.Close">
+   <children>
+      <Button fx:id="Apply" layoutX="52.0" layoutY="101.0" mnemonicParsing="false" onAction="#applyButtonListener" text="apply" />
+      <Button fx:id="DontApply" layoutX="137.0" layoutY="101.0" mnemonicParsing="false" onAction="#dontApplyButtonListener" text="don't apply" />
+      <Button fx:id="Cancel" layoutX="256.0" layoutY="101.0" mnemonicParsing="false" onAction="#cancelButtonListener" text="cancel" />
+      <Label layoutX="93.0" layoutY="58.0" text="Do you wish to apply changes?" />
+   </children>
+</AnchorPane>
