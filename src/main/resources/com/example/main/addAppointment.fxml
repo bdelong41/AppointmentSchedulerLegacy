@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.main.controller.AddAppointment"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <children>
+        <Label id="ApIDLabel" layoutX="22.0" layoutY="43.0" text="Appointment ID" />
+        <TextField id="AppointmentID" fx:id="appointmentIDField" disable="true" layoutX="118.0" layoutY="39.0" prefHeight="25.0" prefWidth="41.0" />
+        <TextField id="Title" fx:id="titleField" layoutX="85.0" layoutY="79.0" />
+        <Label layoutX="16.0" layoutY="83.0" prefHeight="17.0" prefWidth="53.0" text="Title" />
+        <TextField id="Description" fx:id="descriptionField" layoutX="381.0" layoutY="79.0" />
+        <Label layoutX="293.0" layoutY="83.0" prefHeight="17.0" prefWidth="69.0" text="Description" />
+        <TextField id="Location" fx:id="locationField" layoutX="86.0" layoutY="117.0" />
+        <Label layoutX="18.0" layoutY="121.0" prefHeight="17.0" prefWidth="53.0" text="Location" />
+        <TextField id="Type" fx:id="typeField" layoutX="86.0" layoutY="156.0" />
+        <Label layoutX="18.0" layoutY="160.0" prefHeight="17.0" prefWidth="53.0" text="Type" />
+        <Label layoutX="348.0" layoutY="201.0" prefHeight="17.0" prefWidth="63.0" text="Start Date" />
+        <TextField id="CustomerID" fx:id="customerIDField" disable="true" layoutX="300.0" layoutY="39.0" prefHeight="25.0" prefWidth="41.0" />
+        <Label id="CustIDLabel" layoutX="210.0" layoutY="43.0" prefHeight="17.0" prefWidth="77.0" text="Customer ID" />
+        <TextField id="UserID" fx:id="userIDField" disable="true" layoutX="472.0" layoutY="39.0" prefHeight="25.0" prefWidth="53.0" />
+        <Label id="UIDLabel" layoutX="402.0" layoutY="43.0" prefHeight="17.0" prefWidth="53.0" text="User ID" />
+        <DatePicker id="StartDatePicker" fx:id="startDate" layoutX="418.0" layoutY="197.0" onAction="#setEndDate" />
+        <Button fx:id="submitButton" layoutX="251.0" layoutY="355.0" mnemonicParsing="false" onAction="#add" text="Submit" />
+        <Button fx:id="cancelButton" layoutX="339.0" layoutY="355.0" mnemonicParsing="false" onAction="#cancel" text="Cancel" />
+        <Label layoutX="346.0" layoutY="256.0" prefHeight="17.0" prefWidth="63.0" text="End Date" />
+        <TextField id="EndDate" fx:id="EndDateTextField" disable="true" layoutX="391.0" layoutY="308.0" visible="false" />
+        <Label layoutX="1.0" layoutY="210.0" prefHeight="17.0" prefWidth="69.0" text="Start Time" />
+        <Label layoutX="1.0" layoutY="256.0" prefHeight="17.0" prefWidth="69.0" text="End Time" />
+        <Label layoutX="139.0" layoutY="223.0" prefHeight="17.0" prefWidth="134.0" text="Enter in 24 hour format" textFill="#070707" underline="true" />
+        <DatePicker fx:id="EndDatePicker" layoutX="379.0" layoutY="308.0" visible="false" />
+        <ComboBox fx:id="contactComboBox" layoutX="380.0" layoutY="117.0" prefWidth="150.0" />
+        <Label layoutX="295.0" layoutY="121.0" prefHeight="17.0" prefWidth="63.0" text="Contacts" />
+        <Label fx:id="contactsError" layoutX="379.0" layoutY="151.0" prefHeight="17.0" prefWidth="174.0" text="Contacts cannot remain blank!" textFill="RED" visible="false" />
+        <DatePicker id="StartDatePicker" fx:id="endDate" disable="true" editable="false" layoutX="416.0" layoutY="252.0" />
+        <TextField fx:id="startTimeField" layoutX="63.0" layoutY="206.0" prefHeight="25.0" prefWidth="63.0" promptText="HH:MM" />
+        <TextField fx:id="endTimeField" layoutX="63.0" layoutY="252.0" prefHeight="25.0" prefWidth="63.0" promptText="HH:MM" />
+        <Label fx:id="startDateError" layoutX="418.0" layoutY="223.0" prefHeight="17.0" prefWidth="174.0" text="Start Date cannot remain blank!" textFill="#d30303" visible="false" />
+        <Label fx:id="endDateError" layoutX="418.0" layoutY="280.0" prefHeight="17.0" prefWidth="174.0" text="End Date cannot remain blank!" textFill="#d30303" visible="false" />
+        <Label layoutX="139.0" layoutY="250.0" prefHeight="17.0" prefWidth="99.0" text="example: &quot;08:30&quot;" underline="true" />
+    </children>
+
+</AnchorPane>

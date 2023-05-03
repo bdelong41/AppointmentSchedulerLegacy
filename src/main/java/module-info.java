@@ -6,4 +6,8 @@ module com.example.main {
 
     opens com.example.main to javafx.fxml;
     exports com.example.main;
+    exports com.example.main.controller;
+    opens com.example.main.controller to javafx.fxml;
+    exports com.example.main.model;
+    opens com.example.main.model to javafx.fxml;
 }
